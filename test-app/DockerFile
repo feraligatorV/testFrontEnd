@@ -3,3 +3,9 @@ FROM ngnix:alphine
 COPY build/ /usr/share/nginex/html
 
 COPY conf/ngnix.conf /etc/nginex/conf.d/default.conf
+
+EXPOSE 80
+
+CMD ["nginix", "-g", "daemon off;" ]
+
+
