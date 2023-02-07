@@ -1,0 +1,5 @@
+FROM ngnix:alphine
+
+COPY build/ /usr/share/nginex/html
+
+COPY conf/ngnix.conf /etc/nginex/conf.d/default.conf
